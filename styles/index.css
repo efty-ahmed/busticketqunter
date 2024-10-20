@@ -1,0 +1,59 @@
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-links.active {
+    display: block;
+  }
+}
+#card_1 {
+  border-bottom: 3px solid green;
+}
+#card_2 {
+  border-bottom: 3px solid green;
+}
+#card_3 {
+  border-bottom: 3px solid green;
+}
+
+/* sit section-----> */
+
+.seat {
+  cursor: pointer;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #e5e7eb;
+  /* Tailwind Gray-200 */
+  margin: 5px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 8px;
+}
+
+.seat.selected {
+  background-color: #16a34a;
+  /* Tailwind Green-600 */
+  color: white;
+}
+
+.seat-label {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reduce the gap between row label and seat */
+.seat-grid {
+  display: grid;
+  grid-template-columns: 30px repeat(4, 1fr);
+  /* 30px for label, rest for seats */
+  gap: 5px;
+  /* Small gap between seats and label */
+}
+
+#ava_sle {
+  border-top: 2px dashed gray;
+  border-bottom: 2px dashed gray;
+}
